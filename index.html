@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Ashwin's Form</title>
+  </head>
+
+  <body>
+    <div class="form__container">
+      <h3 class="form__title">Get in touch</h3>
+      <form action="action.php" class="form">
+        <ul class="form__rows">
+          <!-- ------------------------------ first row ------------------------------ -->
+
+          <li class="form__row form__row--inline">
+            <div class="form__col col-2">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" required />
+            </div>
+            <div class="form__col col-2">
+              <label for="lname">Last Name</label>
+              <input type="" id="lname" required />
+            </div>
+          </li>
+
+          <!-- ----------------------------- second row ------------------------------ -->
+          <li class="form__row form__row--inline">
+            <div class="form__col col-2">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form__col col-2">
+              <label for="gender">Gender</label>
+              <div class="radio-options">
+                <label for="male">
+                  <input type="radio" id="male" name="gender" />
+                  Male
+                </label>
+                <label for="female">
+                  <input type="radio" id="female" name="gender" />
+                  Female
+                </label>
+                <label for="none">
+                  <input type="radio" id="none" name="gender" />
+                  Prefer not to say
+                </label>
+              </div>
+            </div>
+          </li>
+
+          <!-- ------------------------------ third row ------------------------------ -->
+          <li class="form__row form__row--inline">
+            <div class="form__col col-3">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" required />
+            </div>
+            <div class="form__col col-3">
+              <label for="meeting">Date</label>
+              <input type="date" id="meeting" required />
+            </div>
+
+            <div class="form__col col-3">
+              <label for="subject">Subject</label>
+              <select name="subject" required>
+                <option value="" selected="true" disabled>
+                  I want to learn
+                </option>
+                <option value="">web development</option>
+                <option value="">data structures</option>
+                <option value="">math</option>
+                <option value="">others</option>
+              </select>
+            </div>
+          </li>
+
+          <!-- ----------------------------- fourth row ------------------------------ -->
+
+          <li class="form__row form__row--inline">
+            <div class="form__col col-2 message">
+              <label for="msg">Message</label>
+              <textarea
+                id="msg"
+                placeholder="Please type your message"
+              ></textarea>
+            </div>
+
+            <div class="form__col col-2">
+              <label for="dayPicker"> Pick a day</label>
+              <div class="day">
+                <label for="Sunday"></label>
+                <input type="checkbox" id="Sunday" />
+                Sunday
+              </div>
+              <div class="day">
+                <label for="Monday"></label>
+                <input type="checkbox" id="Monday" />
+                Monday
+              </div>
+              <div class="day">
+                <label for="Tuesday"></label>
+                <input type="checkbox" id="Tuesday" />
+                Tuesday
+              </div>
+              <div class="day">
+                <label for="Wednesday"></label>
+                <input type="checkbox" id="Wednesday" />
+                Wednesday
+              </div>
+              <div class="day">
+                <label for="Thursday"></label>
+                <input type="checkbox" id="Thursday" />
+                Thursday
+              </div>
+              <div class="day">
+                <label for="Friday"></label>
+                <input type="checkbox" id="Friday" />
+                Friday
+              </div>
+              <div class="day">
+                <label for="Saturday"></label>
+                <input type="checkbox" id="Saturday" />
+                Saturday
+              </div>
+            </div>
+
+            <!-- ---------------------------- submit button ---------------------------- -->
+          </li>
+
+          <li class="form__row">
+            <button type="submit" class="form__btn">Submit</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
